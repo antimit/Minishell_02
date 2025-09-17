@@ -1,0 +1,17 @@
+minishell: #: command not found
+minishell: #: command not found
+minishell: dev/null: No such file or directory
+minishell: #: command not found
+minishell: #: command not found
+minishell: #: command not found
+minishell: #: command not found
+minishell: #: command not found
+minishell: #: command not found
+minishell: content: command not found
+minishell: : No such file or directoryminishell: DELIM: No such file or directorycat: -: Bad file descriptor
+cat: closing standard input: Bad file descriptor
+minishell: L1: command not found
+minishell: L2: command not found
+minishell: DELIM: command not found
+minishell: #: command not found
+exit

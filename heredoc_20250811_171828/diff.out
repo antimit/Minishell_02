@@ -1,0 +1,8 @@
+--- heredoc_20250811_171828/bash.out	2025-08-11 17:18:28.766802785 +0200
++++ heredoc_20250811_171828/ms.out	2025-08-11 17:18:28.775210627 +0200
+@@ -1,3 +1 @@
+-L1
+-L2 plain
+-Y
++[32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m [32;1mantimit@[0m:[1;34m/antimit/Desktop/Minishell$[0m 
+\ No newline at end of file

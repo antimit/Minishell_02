@@ -1,0 +1,10 @@
+minishell: : No such file or directoryminishell: DELIM: No such file or directorycat: -: Bad file descriptor
+cat: closing standard input: Bad file descriptor
+minishell: L1: command not found
+minishell: L2: command not found
+minishell: DELIM: command not found
+minishell: : No such file or directoryminishell: EOF2: No such file or directorycat: -: Bad file descriptor
+cat: closing standard input: Bad file descriptor
+minishell: Y: command not found
+minishell: EOF2: command not found
+exit

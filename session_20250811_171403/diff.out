@@ -1,0 +1,19 @@
+--- session_20250811_171403/bash.out	2025-08-11 17:14:03.867133025 +0200
++++ session_20250811_171403/ms.out	2025-08-11 17:14:03.895132673 +0200
+@@ -2,8 +2,8 @@
+ hello world
+ no_newline_tail
+ USER=antimit
+-$USER
+-[]
++$USER # single quotes → literal
++[] # undefined → empty in double quotes
+ st=1
+ pipe_last=1
+ FOO=bar
+@@ -16,5 +16,3 @@
+ A
+ B
+ 2
+-L1
+-L2 antimit

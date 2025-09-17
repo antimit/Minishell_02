@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iosfwd": "c",
+        "limits": "c",
+        "functional": "c",
+        "variant": "c",
+        "*.inc": "c",
+        "stdlib.h": "c"
+    }
+}

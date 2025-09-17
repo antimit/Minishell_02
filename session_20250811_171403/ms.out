@@ -1,0 +1,18 @@
+/home/antimit/Desktop/Minishell
+hello world
+no_newline_tail
+USER=antimit
+$USER # single quotes → literal
+[] # undefined → empty in double quotes
+st=1
+pipe_last=1
+FOO=bar
+FOO=bar
+FOO_after_unset=[]
+/home/antimit/Desktop/Minishell
+/
+/home/antimit/Desktop/Minishell
+/home/antimit/Desktop/Minishell
+A
+B
+2

@@ -1,0 +1,2 @@
+bash: -c: line 1: syntax error near unexpected token `>'
+bash: -c: line 1: `echo hi >>> results_20250811_171348/x'
