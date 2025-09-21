@@ -39,6 +39,42 @@ extern int						g_tester;
 /*
 ** structures
 */
+
+/*
+** Data structures for representing parsed shell commands.
+**
+** t_sep (separator list):
+**  - A node in a doubly linked list of top-level command segments.
+**  - Each segment comes from splitting the input line on separators
+**    such as ';', '&&', or '||'.
+**  - Fields:
+**      cmd_sep : the raw command string for this segment
+**      prev    : link to previous segment
+**      next    : link to next segment
+**      pipcell : optional pointer to a sublist of t_pip nodes
+**                if this segment contains a pipeline ('|')
+**
+** t_pip (pipeline list):
+**  - A node in a doubly linked list of commands connected by pipes.
+**  - Built only inside one t_sep segment that contains '|'.
+**  - Fields:
+**      cmd_pip : one command from the pipeline
+**      prev    : link to previous command in the pipeline
+**      next    : link to next command in the pipeline
+**
+** Example:
+**   Input line:  echo hello ; ls -l | grep .c | wc -l
+**
+**   t_sep list:
+**     [cmd_sep="echo hello"] <-> [cmd_sep="ls -l | grep .c | wc -l"]
+**
+**   For the second t_sep node, pipcell points to:
+**     [cmd_pip="ls -l"] <-> [cmd_pip="grep .c"] <-> [cmd_pip="wc -l"]
+**
+** This two-level structure lets minishell handle separators and pipelines
+** separately during parsing and execution.
+*/
+
 typedef	struct			s_sep
 {
 	char				*cmd_sep;

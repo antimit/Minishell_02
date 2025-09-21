@@ -45,6 +45,10 @@ int			return_error(char *cmd, char *msg, int ret, int status)
 	return (ret);
 }
 
+// Checks if the string `line` contains only whitespace and at most one colon `:`,
+// where the colon may appear only once. 
+// Returns 1 if valid (only spaces and a single optional colon), otherwise 0.
+
 int			check_space_colon(char *line)
 {
 	size_t	i;

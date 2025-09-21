@@ -26,6 +26,33 @@ t_sep	*create_cell(char *cmd_sep)
 	return (cell);
 }
 
+/*
+ * Inserts a new t_sep node into the linked list `list` at the given
+ * zero-based position `pos`.
+ *
+ * Behavior:
+ *  - If `list` is NULL, creates the first node and returns it as the new head.
+ *  - Otherwise, walks the list until reaching index `pos`, then links
+ *    the new cell between `prec` (previous) and `cur` (current).
+ *  - The new node’s cmd_sep pointer is set to the provided string.
+ *
+ * Notes / limitations:
+ *  - Inserting at position 0 with a non-empty list will dereference
+ *    `prec` uninitialized (bug).
+ *  - If `pos` is larger than the list length, `cur` may become NULL and
+ *    the loop will misbehave.
+ *  - Only the `next` pointers are updated; `prev` is ignored even though
+ *    it exists in t_sep.
+ *
+ * Returns:
+ *  The (possibly unchanged) head of the list.
+ *
+ * Typical usage in minishell:
+ *  Called in a loop with increasing `pos` to build the list in order
+ *  from an array of command segments.
+ */
+
+ 
 t_sep	*add_cell(t_sep *list, char *cmd_sep, int pos)
 {
 	t_sep	*prec;
